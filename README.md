@@ -36,4 +36,7 @@ A landing page utiliza a seguinte identidade visual:
 - Layout simples e responsivo
 - Foco em **legibilidade e organização visual**
 
+---
+# Avatar
+https://ui-avatars.com/api/?background=1F2937&color=020617&name=Murilo+Munari
 
