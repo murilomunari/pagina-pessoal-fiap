@@ -103,6 +103,49 @@ main {
 }
 
 
+.sobre-flexbox {
+  display: flex !important;
+  align-items: center;
+  gap: 30px;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.sobre-conteudo > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.sobre-imagem {
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .sobre-flexbox {
+    flex-direction: column;
+  }
+
+  .sobre-conteudo {
+    flex-direction: column;
+  }
+
+  .sobre-imagem {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
 ul {
   margin-top: 10px;
   margin-left: 20px;
@@ -186,47 +229,4 @@ a:hover {
 
 .rodape p {
   margin: 5px 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-    width: 100%;
-  }
-
-  thead {
-    display: none;
-  }
-
-  tr {
-    margin-bottom: 15px;
-    background-color: #ffffff;
-    border: 1px solid #d1d5db;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  td {
-    border: none;
-    padding: 10px 0;
-  }
 }
