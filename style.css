@@ -230,3 +230,70 @@ a:hover {
 .rodape p {
   margin: 5px 0;
 }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid #F97316;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.formulario__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario label {
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  color: #020617;
+  background-color: #F9FAFB;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 11px 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #6b7280;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #F97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+.formulario button {
+  align-self: flex-start;
+  border: none;
+  border-radius: 8px;
+  background-color: #F97316;
+  color: #F9FAFB;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.formulario button:hover {
+  background-color: #FACC15;
+  color: #020617;
+}
