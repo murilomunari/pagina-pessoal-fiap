@@ -1,0 +1,21 @@
+:root {
+  --font-family-base: Arial, Helvetica, sans-serif;
+  --radius: 10px;
+  --container-width: 1100px;
+
+  --color-bg-page: #f9fafb;
+  --color-bg-surface: #ffffff;
+  --color-text-primary: #020617;
+  --color-text-inverse: #f9fafb;
+  --color-text-muted: #6b7280;
+
+  --color-primary: #1f2937;
+  --color-accent: #f97316;
+  --color-highlight: #facc15;
+  --color-border: #d1d5db;
+  --color-border-soft: #e5e7eb;
+
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --focus-ring: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
