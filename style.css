@@ -1,10 +1,12 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --radius: 10px;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -12,7 +14,6 @@ body {
   color: #020617;
   line-height: 1.6;
 }
-
 
 .container {
   background-color: #1F2937;
@@ -39,7 +40,6 @@ body {
   margin-bottom: 25px;
 }
 
-
 .navegacao {
   margin-bottom: 30px;
 }
@@ -58,7 +58,7 @@ body {
   color: #F9FAFB;
   background-color: #F97316;
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: var(--radius);
   font-weight: bold;
   transition: 0.3s;
 }
@@ -68,19 +68,17 @@ body {
   color: #020617;
 }
 
-
 main {
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
-
 .sessao {
   background-color: #ffffff;
   margin-bottom: 25px;
   padding: 25px;
-  border-radius: 14px;
+  border-radius: var(--radius);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-left: 6px solid #FACC15;
 }
@@ -101,7 +99,6 @@ main {
 .sessao p {
   margin-bottom: 12px;
 }
-
 
 .sobre-flexbox {
   display: flex !important;
@@ -124,7 +121,7 @@ main {
 .sobre-imagem {
   width: 280px;
   height: 280px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   object-fit: cover;
   flex-shrink: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -145,7 +142,6 @@ main {
   }
 }
 
-
 ul {
   margin-top: 10px;
   margin-left: 20px;
@@ -155,14 +151,13 @@ ul li {
   margin-bottom: 8px;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
   background-color: #ffffff;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: var(--radius);
 }
 
 thead {
@@ -177,21 +172,16 @@ td {
   text-align: left;
 }
 
-
 .projetos-sessao {
   background-color: #F9FAFB;
   border: 1px solid #e5e7eb;
   border-left: 5px solid #F97316;
-  border-radius: 12px;
+  border-radius: var(--radius);
   padding: 20px;
   margin-top: 20px;
-}
-
-.projetos-sessao {
   margin-bottom: 10px;
   color: #1F2937;
 }
-
 
 a {
   color: #F97316;
@@ -201,7 +191,6 @@ a {
 a:hover {
   color: #1F2937;
 }
-
 
 #contato ul {
   list-style: none;
@@ -217,7 +206,6 @@ a:hover {
   font-weight: bold;
 }
 
-
 .rodape {
   background-color: #1F2937;
   color: #F9FAFB;
@@ -229,4 +217,70 @@ a:hover {
 
 .rodape p {
   margin: 5px 0;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.formulario__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario label {
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  color: #020617;
+  background-color: #F9FAFB;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  padding: 11px 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #6b7280;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #F97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+.formulario button {
+  align-self: flex-start;
+  border: none;
+  border-radius: var(--radius);
+  background-color: #F97316;
+  color: #F9FAFB;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.formulario button:hover {
+  background-color: #FACC15;
+  color: #020617;
 }
