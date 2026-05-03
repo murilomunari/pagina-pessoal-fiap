@@ -1,0 +1,12 @@
+.rodape {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 4px solid var(--color-highlight);
+}
+
+.rodape p {
+  margin: 5px 0;
+}
