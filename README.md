@@ -10,6 +10,7 @@ Uma **Landing Page** é uma página web focada em concentrar informações impor
 
 - Praticar estruturação de páginas com **HTML**
 - Trabalhar estilização utilizando **CSS**
+- Criar interações com **JavaScript** (menu mobile, accordion e botão voltar ao topo)
 - Criar uma **Landing Page pessoal**
 - Aplicar uma **paleta de cores definida**
 - Organizar o projeto para publicação no **GitHub**

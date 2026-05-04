@@ -9,24 +9,34 @@
 <body>
 
   <header class="container">
-    <img 
-      src="https://ui-avatars.com/api/?background=1F2937&color=F8FAFC&name=Murilo+Munari" 
-      alt="Avatar de Murilo Munari"
-      width="80"
-      height="80"
-    >
+    <div class="header-topo">
+      <img 
+        src="https://ui-avatars.com/api/?background=1F2937&color=F8FAFC&name=Murilo+Munari" 
+        alt="Avatar de Murilo Munari"
+        width="80"
+        height="80"
+      >
 
-     <nav class="navegacao">
-      <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#objetivo">Objetivo Profissional</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+      <div class="header-menu">
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+          <span class="menu-toggle__linha"></span>
+          <span class="menu-toggle__linha"></span>
+          <span class="menu-toggle__linha"></span>
+        </button>
+
+        <nav class="navegacao" id="menu-principal">
+          <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#objetivo">Objetivo Profissional</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     
     <h1>Murilo Munari</h1>
     <p>QA | Transição para Desenvolvedor Back-end Java</p>
@@ -66,38 +76,63 @@
     <section id="habilidades" class="sessao">
       <h2>Habilidades</h2>
 
-      <h3>Hard Skills</h3>
-      <ul>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>Spring Boot</li>
-        <li>Spring Data JPA</li>
-        <li>APIs REST</li>
-        <li>SQL</li>
-        <li>MySQL</li>
-        <li>Git e GitHub</li>
-        <li>Testes manuais e automatizados</li>
-        <li>Playwright</li>
-        
-      </ul>
+      <div class="accordion" data-accordion>
+        <article class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="accordion-hard-skills">
+              Hard Skills
+            </button>
+          </h3>
+          <div id="accordion-hard-skills" class="accordion-panel" hidden>
+            <ul>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Spring Boot</li>
+              <li>Spring Data JPA</li>
+              <li>APIs REST</li>
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>Git e GitHub</li>
+              <li>Testes manuais e automatizados</li>
+              <li>Playwright</li>
+            </ul>
+          </div>
+        </article>
 
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Resolução de problemas</li>
-        <li>Comunicação</li>
-        <li>Organização</li>
-        <li>Aprendizado contínuo</li>
-        <li>Trabalho em equipe</li>
-        <li>Atenção aos detalhes</li>
-      </ul>
+        <article class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="accordion-soft-skills">
+              Soft Skills
+            </button>
+          </h3>
+          <div id="accordion-soft-skills" class="accordion-panel" hidden>
+            <ul>
+              <li>Resolução de problemas</li>
+              <li>Comunicação</li>
+              <li>Organização</li>
+              <li>Aprendizado contínuo</li>
+              <li>Trabalho em equipe</li>
+              <li>Atenção aos detalhes</li>
+            </ul>
+          </div>
+        </article>
 
-      <h3>Tecnologias</h3>
-      <ul>
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>Node.js</li>
-        <li>JavaScript</li>
-      </ul>
+        <article class="accordion-item">
+          <h3>
+            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="accordion-tecnologias">
+              Tecnologias
+            </button>
+          </h3>
+          <div id="accordion-tecnologias" class="accordion-panel" hidden>
+            <ul>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>Node.js</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="formacao" class="sessao">
@@ -237,9 +272,14 @@
     </section>
   </main>
 
+  <button class="voltar-topo" type="button" aria-label="Voltar ao topo">
+    ↑
+  </button>
+
   <footer class="rodape">
     <p>© 2026 Murilo Munari - Todos os direitos reservados</p>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
 </html>
