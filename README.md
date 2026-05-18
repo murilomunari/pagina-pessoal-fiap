@@ -41,3 +41,7 @@ A landing page utiliza a seguinte identidade visual:
 # Avatar
 https://ui-avatars.com/api/?background=1F2937&color=020617&name=Murilo+Munari
 
+---
+# Link Publico
+https://murilomunari.github.io/pagina-pessoal-fiap/
+
